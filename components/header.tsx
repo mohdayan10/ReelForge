@@ -100,7 +100,25 @@ export const HeroHeader = () => {
                       )}
                     </li>
                   ))}
+                  <li>
+                    <Link
+                      href="/login"
+                      className="text-black hover:text-accent-foreground block duration-150"
+                      onClick={() => setMenuState(false)}
+                    >
+                      <span>Log in</span>
+                    </Link>
+                  </li>
                 </ul>
+              </div>
+
+              <div className="flex w-full flex-col sm:flex-row gap-4 lg:w-auto lg:items-center">
+                <Link
+                  href="/login"
+                  className="hidden lg:inline-flex items-center justify-center whitespace-nowrap rounded-xl text-sm font-medium transition-colors bg-black text-white hover:bg-gray-800 h-9 px-6 shadow-sm"
+                >
+                  Log in
+                </Link>
               </div>
             </div>
           </div>
